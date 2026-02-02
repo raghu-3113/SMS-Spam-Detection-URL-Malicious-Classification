@@ -1,0 +1,100 @@
+{% load static %}
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>SMS Spam Detection</title>
+<meta name="keywords" content="" />
+<meta name="Premium Series" content="" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+<script language="javascript">
+	function validate(formObj)
+	{
+	if(formObj.t1.value.length==0)
+	{
+	alert("Please Enter username");
+	formObj.t1.focus();
+	return false;
+	}
+	if(formObj.t2.value.length==0)
+	{
+	alert("Please Enter password");
+	formObj.t2.focus();
+	return false;
+	}
+	formObj.actionUpdateData.value="update";
+	return true;
+	}
+	</script>
+<style>
+body {
+  background-image: url("{% static 'images/back.jpg' %}");
+}
+</style>
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><span><center><font size="5" color="white"><br/>SMS Spam Detection & URL Malicious Classification</font>
+
+</center></span></h1>
+		
+	</div>
+	<div id="menu">
+		<ul id="main">
+			<li class="current_page_item"><a href="{% url 'index' %}"><font size="4" color="white">Home</a></li><td></td>
+			<li><a href="{% url 'UserLogin' %}"><font size="4" color="white">User Login Here</a></li><td></td>
+			<td></td>		
+     
+		</ul>
+		
+	</div>
+	
+</div>
+
+<div id="wrapper">
+	<!-- start page -->
+	<div id="page">
+		 <form name="f1" method="post" action="{% url 'UserLoginAction' %}" OnSubmit="return validate(this)">
+	{% csrf_token %}
+		<!-- start content -->
+		<div id="content">
+		<div class="flower"><img src="{% static 'images/tra.jpg' %}" alt="" width="800" height="200" /></center></div>
+			<br/><br/>
+			<div class="flower"><center><h1>
+			<font size="" align="center">
+			User Login Page</font><h1></div>
+			
+		
+			<center><font face="verdana" color="blue">{{ data|safe }}</center></font>
+		<br/>
+			<table align="center">
+<tr><td><font size="3" color="black">Username</td><td><input type="text" name="t1" size="30"/></td></tr>
+<tr><td><font size="3" color="black">Password</td><td><input type="password" name="t2" size="30"/></td></tr>
+
+</td></tr>
+
+</td></tr>
+<tr><td></td><td><input type="submit" value="Login"></td>
+</td></tr></table>
+</form>
+			</table>
+			</center><br /><div class="post">
+				
+				<div class="entry">
+					
+				</div>
+			</div>
+		</div>
+		<!-- end content -->
+		<!-- start sidebars -->
+		
+		<!-- end sidebars -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end page -->
+</div>
+</body>
+</html>
+
+
