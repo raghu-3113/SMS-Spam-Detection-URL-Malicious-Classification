@@ -15,12 +15,6 @@ The project framework and guidance were provided externally, with emphasis on **
 
 ---
 
-## 📌 Project Information
-
-This project was provided by an external company for learning and presentation purposes.
-
-Our team studied, understood, and presented the project as part of academic coursework.
-
 ## 👥 Team Members
 
 - V. Jahnavi
