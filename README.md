@@ -15,6 +15,20 @@ The project framework and guidance were provided externally, with emphasis on **
 
 ---
 
+## 📌 Project Information
+
+This project was provided by an external company for learning and presentation purposes.
+
+Our team studied, understood, and presented the project as part of academic coursework.
+
+## 👥 Team Members
+
+- V. Jahnavi
+- N. Raghu Babu
+- R. L. Amrutha Valli
+- T. Pradeep
+
+
 ## 🧠 Core Idea
 The core idea of this project is to **automate the detection of spam messages and malicious URLs** using machine learning models trained on historical data, thereby improving digital security and reducing human effort.
 
